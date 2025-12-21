@@ -42,14 +42,20 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build
 
+      - name: Checkout meta branch (read-only)
+        uses: actions/checkout@v4
+        with:
+          ref: meta
+          path: meta-branch
+
       - name: Integrate meta files
         run: |
           mkdir -p _site/v1
-          if [ -d meta/ptlauncher ] && [ "$(ls -A meta/ptlauncher 2>/dev/null)" ]; then
-            cp -r meta/ptlauncher/* _site/v1/
+          if [ -d meta-branch/ptlauncher ] && [ "$(ls -A meta-branch/ptlauncher 2>/dev/null)" ]; then
+            cp -r meta-branch/ptlauncher/* _site/v1/
             echo "Meta injected into v1/"
           else
-            echo "WARNING: meta/ptlauncher missing or empty, skipping"
+            echo "WARNING: meta-branch/ptlauncher missing or empty, skipping"
           fi
 
       - name: Prepare deploy files
