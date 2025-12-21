@@ -1,0 +1,19 @@
+{
+    "classifiers": {
+        "installer": {
+            "jar": "2b0570c1f5b602a8137de6531a07b173"
+        },
+        "mdk": {
+            "zip": "45db21d8328ba87bf4f59459c78e9ed9"
+        },
+        "sources": {
+            "jar": "6c3faa16924988445e0b07b9c6e200ff"
+        },
+        "universal": {
+            "jar": "ea203d2e21bfbdac5199d9a42009b568"
+        },
+        "userdev3": {
+            "jar": "e5aab587cd364e89b954da7743a1e57c"
+        }
+    }
+}

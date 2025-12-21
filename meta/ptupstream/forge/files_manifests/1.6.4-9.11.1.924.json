@@ -1,0 +1,16 @@
+{
+    "classifiers": {
+        "changelog": {
+            "txt": "eb281b23864a66e02093c1d2c999d179"
+        },
+        "installer": {
+            "jar": "fa492f6a4c011658babaea4569c1b0ab"
+        },
+        "src": {
+            "zip": "bc5504c45cdc89475f4477c003ab5ee7"
+        },
+        "universal": {
+            "jar": "9f22056da2d310a79ccd352d814e072f"
+        }
+    }
+}
