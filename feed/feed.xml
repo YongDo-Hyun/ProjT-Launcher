@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>ProjT Launcher</title>
+	<subtitle>An Open Source Minecraft launcher with the ability to manage multiple instances, accounts and mods. Focused on user freedom and free redistributability.</subtitle>
+	
+	<link href="https://projtlauncher.yongdohyun.org.tr/feed/feed.xml" rel="self"/>
+	<link href="https://projtlauncher.yongdohyun.org.tr/"/>
+	<updated>2025-12-16T00:00:00Z</updated>
+	<id>https://projtlauncher.yongdohyun.org.tr/</id>
+	<author>
+		<name>Do-Hyun YONG</name>
+		<email>froster12@naver.com</email>
+	</author>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.3-4, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/"/>
+		<updated>2025-12-16T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.3-4&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This patch release focuses on &lt;strong&gt;CI reliability and release automation&lt;/strong&gt;, along with a few important runtime/test fixes.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CI workflow improvements for PR processing and security&lt;/strong&gt; (#70, #75)
+&lt;ul&gt;
+&lt;li&gt;Improved permissions and PR summary/comment behavior&lt;/li&gt;
+&lt;li&gt;Better ref/SHA handling for workflow coordination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backport automation enhancements&lt;/strong&gt; (#75)
+&lt;ul&gt;
+&lt;li&gt;Backport command handling in PR comments&lt;/li&gt;
+&lt;li&gt;Backport-on-close job for labeled PRs when merged&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Release pipeline adjustments&lt;/strong&gt; to improve stability of create/release steps (#70)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;README installation guidance&lt;/strong&gt; to better explain official releases and stable options (#75)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Removed unused Flatpak shared-modules submodule&lt;/strong&gt; and updated submodule configuration (#75)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CI issues affecting release creation and review automation&lt;/strong&gt; (#70, #75)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource loading edge cases&lt;/strong&gt; (#75)
+&lt;ul&gt;
+&lt;li&gt;Excluded &lt;code&gt;.index&lt;/code&gt; directory from resource loading&lt;/li&gt;
+&lt;li&gt;Adjusted timeout behavior for Windows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test reliability&lt;/strong&gt; in &lt;code&gt;ResourceFolderModel&lt;/code&gt; timeout handling (#75)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-4/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flatpak/shared-modules&lt;/code&gt; submodule (unused) (#75)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-3...0.0.3-4&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-3...0.0.3-4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://projtlauncher.yongdohyun.org.tr/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.3-3, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/"/>
+		<updated>2025-12-15T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.3-3&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This update focuses on &lt;strong&gt;CI/automation stability and maintainability&lt;/strong&gt;, plus a few critical fixes for &lt;strong&gt;Linux dependency setup&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Large CI system refresh&lt;/strong&gt; (#56, #61)
+&lt;ul&gt;
+&lt;li&gt;New evaluation workflows, checks, and reporting structure&lt;/li&gt;
+&lt;li&gt;Consolidated CI scripts under &lt;code&gt;ci/&lt;/code&gt; for reuse and consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New contribution documentation set&lt;/strong&gt; (#27)
+&lt;ul&gt;
+&lt;li&gt;Architecture, code style, workflow, testing, and project structure guides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repository automation configs&lt;/strong&gt; (#56, #57, #49)
+&lt;ul&gt;
+&lt;li&gt;Issue templates, Dependabot scheduling/labels, labeler rules, and stale-bot documentation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;force-prepare-yes&lt;/code&gt; workflow input&lt;/strong&gt; for conditional prepare/test/build behavior (#66)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backport automation improvements&lt;/strong&gt; (#62, #64)
+&lt;ul&gt;
+&lt;li&gt;Better backport label extraction&lt;/li&gt;
+&lt;li&gt;Backport workflow now correctly creates backport branches and PRs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Periodic merge workflow reliability&lt;/strong&gt; (#51, #52, #53, #54, #50)
+&lt;ul&gt;
+&lt;li&gt;Safer conflict resolution and branch handling for automated merges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentation and build config cleanup&lt;/strong&gt; (#65)
+&lt;ul&gt;
+&lt;li&gt;README clarity improvements (including QML migration notes)&lt;/li&gt;
+&lt;li&gt;Removed redundant Linux ARM build configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependency updates via Dependabot&lt;/strong&gt; (GitHub Actions + CI JS deps) (#28, #29, #30, #31, #32, #36, #37, #38, #39, #42, #43, #44, #45, #46, #47)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Linux dependency setup: libtiff mismatch issues&lt;/strong&gt; (#67, #69)
+&lt;ul&gt;
+&lt;li&gt;Corrected package selection and added a compatibility symlink where needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workflow and template polish&lt;/strong&gt; (#61)
+&lt;ul&gt;
+&lt;li&gt;Naming consistency and small syntax/template fixes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-3/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Deprecated/older CI workflows replaced by the new evaluation framework (#56)&lt;/li&gt;
+&lt;li&gt;Unused lint script/devDependencies from &lt;code&gt;ci/github-script&lt;/code&gt; (#35)&lt;/li&gt;
+&lt;li&gt;Flatpak helper script no longer used (&lt;code&gt;flatpak/prime-run&lt;/code&gt;) (#20)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-2...0.0.3-3&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-2...0.0.3-3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://projtlauncher.yongdohyun.org.tr/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.3-2, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-2/"/>
+		<updated>2025-11-30T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-2/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.3-2&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This release updates the metainfo file.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-2/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-2/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Updated metainfo&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-1...0.0.3-2&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3-1...0.0.3-2&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.3-1, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-1/"/>
+		<updated>2025-11-30T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-1/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.3-1&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This release includes minor fixes&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3-1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Updated Docs&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3...0.0.3-1&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.3...0.0.3-1&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.3, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/"/>
+		<updated>2025-11-27T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.3&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This release is the largest update since the project began, completing the full &lt;strong&gt;rebranding from Prism Launcher&lt;/strong&gt;, introducing an entirely new &lt;strong&gt;Backup System&lt;/strong&gt;, and delivering major improvements across packaging, CI, documentation, and platform compatibility.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Full Backup System&lt;/strong&gt;&lt;br /&gt;
+A complete backup/restore implementation for managing Minecraft instances safely.&lt;br /&gt;
+Includes:
+&lt;ul&gt;
+&lt;li&gt;BackupManager core system&lt;/li&gt;
+&lt;li&gt;BackupPage integration for instance settings&lt;/li&gt;
+&lt;li&gt;BackupDialog UI&lt;/li&gt;
+&lt;li&gt;Backup metadata &amp;amp; workflow&lt;/li&gt;
+&lt;li&gt;Instance list backup indicators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New CMakePresets.json&lt;/strong&gt; replacing multiple per-platform preset files, simplifying the build pipeline.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;generate_todo_report.py&lt;/strong&gt; script for automated TODO scanning and reporting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;APPLE_SILICON_RATIONALE.md&lt;/strong&gt; explaining support considerations and technical details for Apple Silicon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Complete Rebranding to ProjT Launcher (#5)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced all Prism references with ProjT branding&lt;/li&gt;
+&lt;li&gt;Updated CMake project metadata&lt;/li&gt;
+&lt;li&gt;Updated Application.cpp / Application.h naming and UI elements&lt;/li&gt;
+&lt;li&gt;New application icons, Big Sur style logos, and updated instance icons&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Updated Flatpak Manifest (tr.org.yongdohyun.ProjTLauncher.yml)&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved structure, removed legacy modules&lt;/li&gt;
+&lt;li&gt;Updated runtime integrations and packaging paths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Debian packaging improvements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated control files, install files, and package name transitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CI/CD Enhancements&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Release builds now clean build directories for consistency&lt;/li&gt;
+&lt;li&gt;Improved Windows, Linux, macOS build and packaging workflows&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Launcher JAR inclusion fix&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;Ensured &lt;code&gt;ProjTLaunch.jar&lt;/code&gt; and &lt;code&gt;ProjTLaunchLegacy.jar&lt;/code&gt; are included in macOS &amp;amp; Linux packages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;General code quality upgrades&lt;/strong&gt; across Application startup, updater, assets, auth, network caching, and UI behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;macOS/Linux missing JAR issue&lt;/strong&gt; causing runtime failures&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Various UI glitches&lt;/strong&gt; in LabeledToolButton, InstanceDelegate, BackupPage&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTP Meta Cache reliability issues&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Json parsing, MMCZip, copy task stability &amp;amp; asset loading&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security documentation formatting issues&lt;/strong&gt; (&lt;a href=&quot;http://security.md/&quot;&gt;SECURITY.md&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multiple CI workflow failures&lt;/strong&gt; due to outdated steps and incorrect dependencies&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nix Flake dependency issues&lt;/strong&gt;, updated lockfile &amp;amp; configuration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.3/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Legacy build preset files:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cmake/linuxPreset.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmake/macosPreset.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cmake/windowsPreset.json&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deprecated Flatpak modules:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;flite.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;libdecor.json&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Old/incompatible Prism branding assets&lt;/li&gt;
+&lt;li&gt;Obsolete CMake and README fragments from previous architecture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.2...0.0.3&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.2...0.0.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://projtlauncher.yongdohyun.org.tr/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.2, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/"/>
+		<updated>2025-11-16T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;official release of ProjT Launcher: version 0.0.2&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This marks a major milestone for the project, as it represents the beginning of our fully independent development path after moving away from our Prism Launcher origin.&lt;/p&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian packaging support: Added complete .deb package structure with control files, changelog, installation rules, and build scripts for Debian-based distributions.&lt;/li&gt;
+&lt;li&gt;Pull Request template: Introduced structured PR template for improved contribution workflow.&lt;/li&gt;
+&lt;li&gt;Git submodules for Java components: Migrated javacheck and launcher Java modules to dedicated Git submodules for cleaner repository structure.&lt;/li&gt;
+&lt;li&gt;Enhanced Nix flake configuration with improved GitHub API authentication to prevent rate limiting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Submodule architecture: Converted internal Java libraries (javacheck, launcher) from in-tree code to Git submodules, removing 3000+ lines of duplicated code.&lt;/li&gt;
+&lt;li&gt;Library updates: Updated quazip, cmark, extra-cmake-modules, and tomlplusplus submodules to latest stable versions.&lt;/li&gt;
+&lt;li&gt;Flatpak configuration: Updated Flatpak manifest with 47 improvements for better sandboxing and runtime compatibility.&lt;/li&gt;
+&lt;li&gt;MetaInfo updates: Refreshed AppStream metadata with updated descriptions and compatibility information (38 changes).&lt;/li&gt;
+&lt;li&gt;Improved GitHub Actions Nix workflow with proper token authentication to avoid API rate limits.&lt;/li&gt;
+&lt;li&gt;Enhanced build system stability with better dependency resolution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed launcher part launch compatibility issues in Minecraft integration layer.&lt;/li&gt;
+&lt;li&gt;Fixed .gitignore patterns to better handle build artifacts and temporary files.&lt;/li&gt;
+&lt;li&gt;Improved Nix binary cache configuration for faster builds.&lt;/li&gt;
+&lt;li&gt;Fixed submodule reference issues in Flatpak shared-modules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.2/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed in-tree javacheck Java source files (now submodule): JavaCheck.java, CMakeLists.txt.&lt;/li&gt;
+&lt;li&gt;Removed in-tree launcher Java implementation (now submodule): Entire org.prismlauncher package structure including:&lt;br /&gt;
+--Legacy Minecraft launcher compatibility layer (220+ lines)&lt;br /&gt;
+--Legacy frame and proxy implementations (400+ lines)&lt;br /&gt;
+--Online fixes and skin handling (400+ lines)&lt;br /&gt;
+--JSON parser and utility classes (800+ lines)&lt;br /&gt;
+--Entry point and launcher implementations (600+ lines)&lt;br /&gt;
+--Total: 3000+ lines migrated to dedicated repositories for better version control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.1...0.0.2&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/compare/0.0.1...0.0.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://projtlauncher.yongdohyun.org.tr/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>ProjT Launcher Update 0.0.1, now available</title>
+		<link href="https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/"/>
+		<updated>2025-11-16T00:00:00Z</updated>
+		<id>https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/</id>
+		<content type="html">&lt;p&gt;We are excited to announce the &lt;strong&gt;first official release of ProjT Launcher: version 0.0.1&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;This marks a major milestone for the project, as it represents the beginning of our fully independent development path after moving away from our Prism Launcher origin.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Important Notice:&lt;/strong&gt;&lt;br /&gt;
+Microsoft/Mojang authentication is &lt;strong&gt;not yet functional&lt;/strong&gt; in this release.&lt;br /&gt;
+The API approval process is still in progress, and required application signatures (code-signing certificates &amp;amp; macOS notarization) have &lt;strong&gt;not been issued yet&lt;/strong&gt;.&lt;br /&gt;
+Once API approval and signing certificates are finalized, MSA login will become fully available in a future update.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;changelog&quot; tabindex=&quot;-1&quot;&gt;Changelog &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/#changelog&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;added&quot; tabindex=&quot;-1&quot;&gt;Added &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/#added&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduced full ProjT-branded SPDX header system for all newly created source files.&lt;/li&gt;
+&lt;li&gt;Added complete codebase restructuring to separate upstream (MultiMC/PolyMC/Prism) code from ProjT-specific modules.&lt;/li&gt;
+&lt;li&gt;Implemented custom Qt6-based build configuration with support for QtWayland and Kirigami.&lt;/li&gt;
+&lt;li&gt;Added cross-platform build support for &lt;strong&gt;Windows (MSVC &amp;amp; MinGW), Linux, and macOS&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Added initial &lt;code&gt;.app&lt;/code&gt; bundle structure for macOS builds.&lt;/li&gt;
+&lt;li&gt;Integrated early OAuth flow preparation for Microsoft/Mojang account login (pending API approval).&lt;/li&gt;
+&lt;li&gt;Added detection of &lt;code&gt;qtlogging.ini&lt;/code&gt; in user and application directories.&lt;/li&gt;
+&lt;li&gt;Added full ProjT branding (logos, names, identifiers, contributor credits).&lt;/li&gt;
+&lt;li&gt;Introduced Inkscape → PNG → ICO icon pipeline for Windows assets.&lt;/li&gt;
+&lt;li&gt;Added custom NixOS development environment (Hyprland, Qt, OBS, JetBrains tools).&lt;/li&gt;
+&lt;li&gt;Added initial remote Nix binary cache server infrastructure.&lt;/li&gt;
+&lt;li&gt;Added GitHub Pages deployment workflow for the ProjT Launcher website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;changed&quot; tabindex=&quot;-1&quot;&gt;Changed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/#changed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Replaced all outdated upstream license headers with preserved upstream blocks + ProjT extensions.&lt;/li&gt;
+&lt;li&gt;Migrated build system to a fully Qt6-native toolchain, removing older Qt5/legacy logic.&lt;/li&gt;
+&lt;li&gt;Updated the entire CMake tree with modernized target linking and static dependency rules.&lt;/li&gt;
+&lt;li&gt;Improved logging during launcher startup to better detect configuration and platform issues.&lt;/li&gt;
+&lt;li&gt;Updated project folder naming, identifiers, and contributor credits to ProjT standards.&lt;/li&gt;
+&lt;li&gt;Optimized CI to generate artifacts for every commit, following a continuous-release approach.&lt;/li&gt;
+&lt;li&gt;Enhanced Windows build pipeline with improved MSVC runtime bundling.&lt;/li&gt;
+&lt;li&gt;Reorganized branding assets and icons into a structured ProjT theme.&lt;/li&gt;
+&lt;li&gt;Fully detached repository identity from Prism Launcher upstream.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;fixed&quot; tabindex=&quot;-1&quot;&gt;Fixed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/#fixed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed zlib module path resolution in the build system.&lt;/li&gt;
+&lt;li&gt;Fixed multiple Qt6 dependency issues across Linux and macOS environments.&lt;/li&gt;
+&lt;li&gt;Fixed macOS build breaks caused by SDK version mismatches after updating the base image.&lt;/li&gt;
+&lt;li&gt;Fixed launcher startup issue where &lt;code&gt;Platform: unknown&lt;/code&gt; was displayed.&lt;/li&gt;
+&lt;li&gt;Fixed GitHub Actions cache misconfigurations leading to failed builds.&lt;/li&gt;
+&lt;li&gt;Fixed incorrect Wayland plugin loading order under Hyprland.&lt;/li&gt;
+&lt;li&gt;Fixed Windows MinGW builds failing due to missing static libraries.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;removed&quot; tabindex=&quot;-1&quot;&gt;Removed &lt;a class=&quot;direct-link&quot; href=&quot;https://projtlauncher.yongdohyun.org.tr/news/release-0.0.1/#removed&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Removed all Prism Launcher branding and upstream-specific metadata.&lt;/li&gt;
+&lt;li&gt;Removed deprecated translation files, unused assets, and outdated modules.&lt;/li&gt;
+&lt;li&gt;Removed old CMake configuration fragments incompatible with Qt6.&lt;/li&gt;
+&lt;li&gt;Removed upstream CI definitions and replaced them with custom ProjT workflows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: &lt;a href=&quot;https://github.com/Project-Tick/ProjT-Launcher/commits/0.0.1&quot;&gt;https://github.com/Project-Tick/ProjT-Launcher/commits/0.0.1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can &lt;a href=&quot;https://projtlauncher.yongdohyun.org.tr/download&quot;&gt;grab the latest download here&lt;/a&gt; for your respective platform.&lt;/p&gt;
+</content>
+	</entry>
+</feed>
