@@ -1,6 +1,7 @@
 name: Update ProjT Meta Files
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 concurrency:
