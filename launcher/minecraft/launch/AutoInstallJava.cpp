@@ -88,7 +88,7 @@ void AutoInstallJava::executeTask()
         emitSucceeded();
         return;
     }
-    if (settings->get("OverrideJavaLocation").toBool()) {
+    if (!settings->get("OverrideJavaLocation").toBool()) {
         emitSucceeded();
         return;
     }
@@ -174,14 +174,9 @@ void AutoInstallJava::executeTask()
 void AutoInstallJava::setJavaPath(QString path)
 {
     auto settings = m_instance->settings();
-    if (settings->get("OverrideJavaLocation").toBool()) {
-        settings->set("OverrideJavaLocation", true);
-        settings->set("JavaPath", path);
-        settings->set("AutomaticJava", true);
-    } else if (auto globalSettings = APPLICATION->settings()) {
-        globalSettings->set("JavaPath", path);
-        settings->set("AutomaticJava", false);
-    }
+    settings->set("OverrideJavaLocation", true);
+    settings->set("JavaPath", path);
+    settings->set("AutomaticJava", true);
     emit logLine(tr("Compatible Java found at: %1.").arg(path), MessageLevel::Launcher);
     emitSucceeded();
 }

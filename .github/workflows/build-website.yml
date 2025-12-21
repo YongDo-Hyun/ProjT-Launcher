@@ -1,4 +1,4 @@
-name: Build Eleventy
+name: Build and Deploy Website
 
 on:
   merge_group:
@@ -10,7 +10,6 @@ on:
 
 jobs:
   build:
-    if: github.repository_owner == 'Project-Tick'
     runs-on: ubuntu-latest
 
     strategy:
@@ -20,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
@@ -32,23 +31,17 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build
 
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./_site
+      - name: Prepare deploy files
+        run: |
+          touch _site/.nojekyll
+          if [ -f .github/CNAME ]; then
+            cp .github/CNAME _site/CNAME
+          fi
 
-  deploy:
-    # Only deploy on pushes to develop; skip PRs/merge_group explicitly
-    if: ${{ github.repository_owner == 'Project-Tick' && github.event_name == 'push' && github.ref == 'refs/heads/develop' && github.event_name != 'pull_request_target' && github.event_name != 'merge_group' }}
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to deploy branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_branch: deploy
+          publish_dir: ./_site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force_orphan: true
