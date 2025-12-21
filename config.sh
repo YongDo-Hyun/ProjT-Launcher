@@ -2,8 +2,8 @@ export META_UPSTREAM_URL="${META_UPSTREAM_URL:-git@github.com:Project-Tick/meta-
 export META_LAUNCHER_URL="${META_LAUNCHER_URL:-git@github.com:Project-Tick/meta-launcher.git}"
 
 
-export META_UPSTREAM_DIR="${META_UPSTREAM_DIR:-upstream}"
-export META_LAUNCHER_DIR="${META_LAUNCHER_DIR:-metalauncher}"
+export META_UPSTREAM_DIR="${META_UPSTREAM_DIR:-meta/ptupstream}"
+export META_LAUNCHER_DIR="${META_LAUNCHER_DIR:-meta/ptlauncher}"
 export DEPLOY_TO_FOLDER="${DEPLOY_TO_FOLDER:-false}"
 export DEPLOY_FOLDER="${DEPLOY_FOLDER:-/app/public/v1}"
 export DEPLOY_FOLDER_USER="${DEPLOY_FOLDER_USER:-http}"
