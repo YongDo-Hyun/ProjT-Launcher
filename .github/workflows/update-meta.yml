@@ -2,12 +2,10 @@ name: Update ProjT Meta Files
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 * * * *"
 
 concurrency:
   group: meta-update
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write

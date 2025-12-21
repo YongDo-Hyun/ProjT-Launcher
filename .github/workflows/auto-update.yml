@@ -1,4 +1,4 @@
-name: Update ProjT Launcher Minecraft Meta Files
+name: Update ProjT Launcher Minecraft Meta Files for old API
 
 on:
   workflow_dispatch:

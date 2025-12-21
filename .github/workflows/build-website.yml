@@ -1,6 +1,9 @@
-name: Build and Deploy Website
+name: Build Website and Meta Files
 
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
   merge_group:
   pull_request_target:
     types: [opened, synchronize, reopened, edited]
@@ -9,7 +12,15 @@ on:
       - develop
 
 jobs:
-  build:
+  build-metadata:
+    name: Build Metadata Files
+    uses: ./.github/workflows/update-meta.yml
+    permissions:
+      contents: write
+
+  build-website:
+    name: Build and Deploy Website
+    needs: [build-metadata]
     runs-on: ubuntu-latest
 
     strategy:
@@ -30,6 +41,16 @@ jobs:
         run: |
           pnpm install --frozen-lockfile
           pnpm run build
+
+      - name: Integrate meta files
+        run: |
+          mkdir -p _site/v1
+          if [ -d meta/ptlauncher ] && [ "$(ls -A meta/ptlauncher 2>/dev/null)" ]; then
+            cp -r meta/ptlauncher/* _site/v1/
+            echo "Meta injected into v1/"
+          else
+            echo "WARNING: meta/ptlauncher missing or empty, skipping"
+          fi
 
       - name: Prepare deploy files
         run: |
