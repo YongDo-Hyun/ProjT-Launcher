@@ -4,8 +4,8 @@ set -x
 
 # Paths
 META_DIR="meta"
-UPSTREAM_DIR="${META_DIR}/upstream"
-LAUNCHER_DIR="${META_DIR}/launcher"
+UPSTREAM_DIR="${META_DIR}/ptupstream"
+LAUNCHER_DIR="${META_DIR}/ptlauncher"
 CACHE_DIR="${CACHE_DIRECTORY:-./.cache/meta}"
 
 mkdir -p "$UPSTREAM_DIR" "$LAUNCHER_DIR" "$CACHE_DIR"

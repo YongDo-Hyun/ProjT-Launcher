@@ -21,8 +21,8 @@ jobs:
 
       - name: Configure git user
         run: |
-          git config user.name "Project Tick Bot"
-          git config user.email "github@bot.yongdohyun.org.tr"
+          git config user.name "YongDo-Hyun"
+          git config user.email "froster12@naver.com"
 
       - uses: actions/setup-python@v6
         with:
@@ -36,14 +36,3 @@ jobs:
 
       - name: Run meta updater
         run: ./newupdate.sh
-
-      - name: Commit & push if changed
-        run: |
-          if git status --porcelain meta/ | grep .; then
-            git add meta/
-            git commit -m "meta: automated update"
-            git push
-          else
-            echo "No meta changes"
-          fi
-        
