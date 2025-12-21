@@ -6,7 +6,9 @@ resources/CMakeFiles
 *~
 *.swp
 html/
-
+.venv/
+.cache/
+__pycache__/
 # Project Files
 *.pro.user
 CMakeLists.txt.user
