@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1.0)
 
-project(QRencode VERSION 4.1.1 LANGUAGES C)
+project(QRencode VERSION 0.0.4.1 LANGUAGES C)
 
 option(WITH_TOOLS "Build utility tools"  YES )
 option(WITH_TESTS "Build tests"  NO )
@@ -69,7 +69,14 @@ endif()
 add_definitions(-DMAJOR_VERSION=${PROJECT_VERSION_MAJOR})
 add_definitions(-DMINOR_VERSION=${PROJECT_VERSION_MINOR})
 add_definitions(-DMICRO_VERSION=${PROJECT_VERSION_PATCH})
-add_definitions(-DVERSION="${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
+add_definitions(-DTWEAK_VERSION=${PROJECT_VERSION_TWEAK})
+
+set(PROJT_VERSION_STRING
+    "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}-${PROJECT_VERSION_TWEAK}"
+)
+
+add_definitions(-DVERSION="${PROJT_VERSION_STRING}")
+
 add_definitions(-DHAVE_SDL=0)
 
 if(MSVC)
@@ -127,7 +134,7 @@ set(prefix "${CMAKE_INSTALL_PREFIX}")
 set(exec_prefix "${CMAKE_INSTALL_FULL_BINDIR}")
 set(libdir "${CMAKE_INSTALL_FULL_LIBDIR}")
 set(includedir "${CMAKE_INSTALL_FULL_INCLUDEDIR}")
-set(VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
+set(VERSION "${PROJT_VERSION_STRING}")
 
 configure_file(qrencode.1.in qrencode.1 @ONLY)
 configure_file(libqrencode.pc.in libqrencode.pc @ONLY)
